@@ -1,0 +1,59 @@
+{
+  "name": "react-songbird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -f -r dist",
+    "dev": "webpack serve --config ./webpack.config.js --open --hot --mode development",
+    "build dev": "webpack -d --mode development",
+    "build prod": "webpack -p --mode production",
+    "build": "webpack",
+    "lint": "eslint ./**/*.jsx --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriellji/react-songbird.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriellji/react-songbird/issues"
+  },
+  "homepage": "https://github.com/Gabriellji/react-songbird#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "react-hot-loader": "^4.13.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "lodash": "^4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
